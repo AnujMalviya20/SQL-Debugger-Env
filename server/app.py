@@ -103,3 +103,6 @@ def list_sessions():
   will help validate where per-episode SQLite files are stored.
   """
   return {k: getattr(v, "_db_path", None) for k, v in ENVS.items()}
+@app.get("/")
+def root():
+    return {"message": "SQL Debugger API is running 🚀"}
