@@ -1,0 +1,20 @@
+# SQL Debugger & Optimizer — server dependencies
+# These are installed into the Docker image.
+
+# OpenEnv core framework
+openenv-core>=0.2.0
+
+# Web framework & server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Data validation (used by openenv-core; pinned for stability)
+pydantic>=2.0.0
+
+# HTTP utilities (health checks, etc.)
+requests>=2.28.0
+
+# WebSockets support (required by FastAPI/uvicorn for /ws endpoint)
+websockets>=11.0
+
+# Python standard library — sqlite3 is built-in, no extra dep needed

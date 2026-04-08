@@ -1,0 +1,7 @@
+action_space:
+name: sql-debugger-env
+description: SQL debugging and optimisation environment for OpenEnv hackathon.
+entrypoint: server.app:app
+ports:
+  - 7860
+hardware: cpu-basic
