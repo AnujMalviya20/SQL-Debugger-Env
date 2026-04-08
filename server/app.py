@@ -59,9 +59,7 @@ def health() -> dict:
 def reset(req: ResetRequest = None):
   """Start a new episode. Returns the initial observation with episode_id set."""
   env = SQLDebuggerEnv()
-  req = req or ResetRequest()
-    obs = env.reset(episode_id=req.episode_id, task_id=req.task_id)
-
+  obs = env.reset(episode_id=req.episode_id, task_id=req.task_id)
   # register environment under its episode id
   ep_id = env.state.episode_id
   ENVS[ep_id] = env
