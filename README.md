@@ -1,4 +1,3 @@
-
 ---
 title: SQL Debugger Env
 emoji: 🤖
@@ -7,14 +6,6 @@ colorTo: purple
 sdk: docker
 app_file: server/app.py
 pinned: false
-------
-title: SQL Debugger Env
-emoji: 🛠️
-colorFrom: blue
-#
----
-sdk: docker
-app_file: server/app.py
 ---
 
 # SQL Debugger & Optimizer
