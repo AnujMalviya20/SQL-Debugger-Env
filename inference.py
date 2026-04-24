@@ -269,9 +269,9 @@ def main() -> None:
     try:
         health = requests.get(f"{ENV_BASE_URL}/health", timeout=10)
         health.raise_for_status()
-        print(f"\n  ✅ Environment server healthy: {health.json()}")
+        print(f"\n   Environment server healthy: {health.json()}")
     except Exception as exc:
-        print(f"\n  ❌ Cannot reach environment server at {ENV_BASE_URL}: {exc}")
+        print(f"\n   Cannot reach environment server at {ENV_BASE_URL}: {exc}")
         print("     Make sure the server is running (python -m uvicorn server.app:app)")
         sys.exit(1)
 
@@ -295,7 +295,7 @@ def main() -> None:
     for r in results:
         print(
             f"  {r['task_id']:<12} {r['steps']:>6} "
-            f"{r['final_score']:>8.4f} {'✅' if r['solved'] else '❌':>8}"
+            f"{r['final_score']:>8.4f} {'' if r['solved'] else '':>8}"
         )
         total_score += r["final_score"]
     avg = total_score / len(results)
