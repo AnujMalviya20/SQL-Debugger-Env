@@ -94,7 +94,7 @@ class SQLDebuggerEnv(Environment[SQLAction, SQLObservation, SQLState]):
         self._task = get_task(task_id)
         ep_id = episode_id or str(uuid.uuid4())
 
-        # ensure episodes folder exists and create per-episode sqlite file
+    
         episodes_dir = os.path.join(os.path.dirname(__file__), "server", "episodes")
         os.makedirs(episodes_dir, exist_ok=True)
         db_path = os.path.join(episodes_dir, f"{ep_id}.db")
