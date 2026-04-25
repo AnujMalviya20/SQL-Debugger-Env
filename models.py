@@ -111,10 +111,6 @@ class SQLObservation(Observation):
     )
 
 
-# ---------------------------------------------------------------------------
-# STATE  (server-side, richer than observation)
-# ---------------------------------------------------------------------------
-
 class SQLState(State):
     """
     Full server-side episode state.
