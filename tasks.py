@@ -154,7 +154,7 @@ def _score_query(
     else:
         feedback_parts.append(f"Row count mismatch: got {len(rows)}, expected {len(expected_rows)}.")
 
-    # Content similarity
+  
     jaccard = _jaccard(rows, expected_rows)
     content_score = round(0.30 * jaccard, 4)
     score += content_score
