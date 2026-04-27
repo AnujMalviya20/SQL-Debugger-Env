@@ -36,7 +36,7 @@ R_ROW_COUNT        = 0.15   # correct number of rows
 R_CONTENT_MAX      = 0.30   # full Jaccard similarity bonus
 R_EFFICIENCY       = 0.05   # JOIN-based approach (medium/hard)
 
-STEP_PENALTY       = 0.02   # per-step cost to discourage dawdling
+STEP_PENALTY       = 0.02   
 DESTRUCTIVE_PENALTY= 0.10   # applied when destructive SQL detected
 MAX_EPISODE_STEPS  = 12     # absolute ceiling across all tasks
 
