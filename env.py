@@ -161,7 +161,7 @@ class SQLDebuggerEnv(Environment[SQLAction, SQLObservation, SQLState]):
         self._state.step_count += 1
         sql = action.sql_query.strip()
 
-        # --- Destructive query check ---
+        
         destructive = _has_destructive(sql)
         destructive_penalty = 0.0
         if destructive and not self._state.destructive_penalty_applied:
