@@ -1,7 +1,7 @@
 """
 SQL Debugger & Optimizer Environment - Tasks & Graders
 ======================================================
-Defines three tasks of increasing difficulty, each with:
+Defines three tasks of increasing difficulty, each with
     - A natural-language description
     - A DB schema (DDL)
     - A broken/inefficient SQL query to start from
