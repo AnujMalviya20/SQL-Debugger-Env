@@ -9,6 +9,7 @@ pinned: false
 ---
 
 # SQL Debugger & Optimizer
+#
 
 Problem
 -------
@@ -58,4 +59,5 @@ docker build -t sql-debugger-env .
 docker run -p 8000:8000 sql-debugger-env
 ```
 
+...
 The health endpoint is available at http://localhost:8000/health
